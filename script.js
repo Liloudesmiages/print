@@ -54,6 +54,9 @@ function changeSlide(direction) {
   // Sélectionne le texte de la bannière
   const bannerText = document.querySelector("#banner p");
   bannerText.innerHTML = currentSlide.tagLine;
+
+  // Met à jour les points (bullets)
+  updateDots();
 }
 
 //sélectionner les points
