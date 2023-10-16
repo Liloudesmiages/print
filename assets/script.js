@@ -42,9 +42,9 @@ function changeSlide(direction) {
   currentSlideIndex = currentSlideIndex + direction;
   console.log(currentSlideIndex);
 
-  if (currentSlideIndex > 3) currentSlideIndex = 0;
-  if (currentSlideIndex < 0) currentSlideIndex = 3;
-
+  if (currentSlideIndex > (slides.length - 1)) currentSlideIndex = 0;
+  if (currentSlideIndex < 0) currentSlideIndex = slides.length - 1;
+  
   const currentSlide = slides[currentSlideIndex];
 
   // Selectionne l'élément de l'image de la bannière
